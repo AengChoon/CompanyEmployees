@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Core.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Core.Services", "CompanyEmployees.Core.Services\CompanyEmployees.Core.Services.csproj", "{A3130380-D37A-4007-A2EC-9C9EF04DD7B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Infrastructure.Presentation", "CompanyEmployees.Infrastructure.Presentation\CompanyEmployees.Infrastructure.Presentation.csproj", "{DDF26446-A2D9-4862-8538-1E69AF8F3505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{A3130380-D37A-4007-A2EC-9C9EF04DD7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3130380-D37A-4007-A2EC-9C9EF04DD7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3130380-D37A-4007-A2EC-9C9EF04DD7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF26446-A2D9-4862-8538-1E69AF8F3505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF26446-A2D9-4862-8538-1E69AF8F3505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF26446-A2D9-4862-8538-1E69AF8F3505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF26446-A2D9-4862-8538-1E69AF8F3505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
