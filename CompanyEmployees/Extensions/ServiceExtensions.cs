@@ -1,4 +1,6 @@
 ﻿using CompanyEmployees.Core.Domain.Repositories;
+using CompanyEmployees.Core.Services;
+using CompanyEmployees.Core.Services.Abstractions;
 using CompanyEmployees.Infrastructure.Persistence;
 using LoggingService;
 
@@ -29,5 +31,10 @@ public static class ServiceExtensions
     public static void ConfigureRepositoryManager(this IServiceCollection services)
     {
         services.AddScoped<IRepositoryManager, RepositoryManager>();
+    }
+    
+    public static void ConfigureServiceManager(this IServiceCollection services)
+    {
+        services.AddScoped<IServiceManager, ServiceManager>();
     }
 }
