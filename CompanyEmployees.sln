@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Core.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Infrastructure.Persistence", "CompanyEmployees.Infrastructure.Persistence\CompanyEmployees.Infrastructure.Persistence.csproj", "{8C3B6C46-8649-4A54-A612-475D532661E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Core.Services.Abstractions", "CompanyEmployees.Core.Services.Abstractions\CompanyEmployees.Core.Services.Abstractions.csproj", "{91F70EAD-2DE9-4468-848B-95F24EA29707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8C3B6C46-8649-4A54-A612-475D532661E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C3B6C46-8649-4A54-A612-475D532661E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C3B6C46-8649-4A54-A612-475D532661E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F70EAD-2DE9-4468-848B-95F24EA29707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F70EAD-2DE9-4468-848B-95F24EA29707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F70EAD-2DE9-4468-848B-95F24EA29707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F70EAD-2DE9-4468-848B-95F24EA29707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
