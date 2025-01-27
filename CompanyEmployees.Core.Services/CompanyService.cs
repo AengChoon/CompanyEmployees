@@ -1,7 +1,7 @@
-﻿using CompanyEmployees.Core.Domain.Entities;
-using CompanyEmployees.Core.Domain.Repositories;
+﻿using CompanyEmployees.Core.Domain.Repositories;
 using CompanyEmployees.Core.Services.Abstractions;
 using LoggingService;
+using Shared.DataTransferObjects;
 
 namespace CompanyEmployees.Core.Services;
 
@@ -16,13 +16,23 @@ internal sealed class CompanyService : ICompanyService
         _logger = logger;
     }
 
-    public IEnumerable<Company> GetAllCompanies(bool trackChanges)
+    public IEnumerable<CompanyDto> GetAllCompanies(bool trackChanges)
     {
         try
         {
             var companies = _repository.Company.GetAllCompanies(trackChanges);
+
+            var companiesDto = companies.Select(company =>
+            {
+                return new CompanyDto
+                (
+                    company.Id,
+                    company.Name ?? string.Empty,
+                    string.Join(' ', company.Address, company.Country)
+                );
+            }).ToList();
             
-            return companies;
+            return companiesDto;
         }
         catch (Exception e)
         {
